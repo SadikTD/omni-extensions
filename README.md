@@ -22,12 +22,24 @@ Then open **Browse → Anime Extensions** and install **Omni**.
 
 | Section | Sources |
 |---|---|
-| Anime (sub & dub) | AnimePahe, Hianimes, AnimeHeaven, Gogoanime, Anidap, Animex |
+| Anime (sub & dub) | AnimePahe, Hianimes, AnimeHeaven, Gogoanime, Anidap, Animex, AllAnime |
 | K/C-Dramas | MyAsianTV |
-| Movies & TV | FlixHub |
+| Movies & TV | FboxTV, Movies2Watch, Vidbox, Watchroo, FlixHub |
 
-Every source is tested for actual playback before a release ships. AnimePahe passes its
-Cloudflare check automatically, without opening WebView.
+## Features
+
+- **Automatic fallback.** If a source has no working video for an episode, Omni finds the same show
+  and episode on another source in the same section and plays that instead. Dramas fall back to the
+  movie & TV sources too.
+- **Fastest server first.** Servers are timed when an episode opens and the quickest is tried first.
+- **Hands-free Cloudflare.** AnimePahe passes its Cloudflare check without opening WebView.
+- **Checked daily.** Every source is probed once a day; breakages are flagged automatically.
+
+Both Omni features can be switched off per source under the source's settings.
+
+AllAnime asks for a Security Check before playing its own servers. Omni plays those episodes from
+another source automatically; to use AllAnime's own servers, open the episode in WebView and pass the
+check yourself.
 
 ## Credits
 
